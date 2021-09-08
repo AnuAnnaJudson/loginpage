@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <title>Login</title>
+
+</head>
+<body style=" background-image: url('https://www.pixelstalk.net/wp-content/uploads/images1/HD-Dark-Cloud-Images.jpg');background-size:cover">
+   <div class="container">
+  {{!-- <h2>Panel Heading</h2> --}}
+  <div class="panel panel-danger col-md-12 col-sm-12" style="margin-top: 10em; background-color:#83847A; color:aliceblue;box-shadow:7px 7px 60px;">
+    <h3 class="panel-heading"style="color:aliceblue; background-color:#333C33; box-shadow:7px 7px 60px;">Login</h3>
+    
+    <div class="panel-body">
+        <form action="/home" method="POST" enctype="application/x-www-form-urlencoded" class="form form-group">
+            <h4>Email</h4>
+            <input type="text" label="Enter your email"name="email" placeholder="abc@gmail.com" class="col-md-12 col-sm-12 input-lg" ><br>
+            <h4>Password</h4>
+            <input type="password" label="Enter your password" name="password" class="col-md-12 col-sm-12 input-lg" placeholder="password"style="color: black;">
+            <p style="color: red;">{{message}}</p>
+            <button class="btn btn-danger" href="#" style="margin-top: 2em;">login</button>
+            
+        </form>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
